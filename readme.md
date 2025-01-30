@@ -8,7 +8,7 @@ SSMD takes Markdown like this: [input.md](./test/input.md), and turns it into Ma
 
 # 3. Installation
 
-Currently the only way to install SSMD is to build it from scratch. SSMD is developed in C using `flex` so you will need both of these tools installed to build from source. Windows users will need to use WSL as the GNU compilers only run on Linux.
+Currently the only way to install SSMD is to build it from scratch. SSMD is developed in C using Flex so you will need both of these tools installed to build from source. Windows users will need to use WSL as the GNU compilers are only availabe on Linux and Linux-based operating systems.
 
 1. Install the GNU C and C++ compilers:
     ```bash
@@ -22,17 +22,12 @@ Currently the only way to install SSMD is to build it from scratch. SSMD is deve
 
 3. Clone the SSMD repository:
     ```bash
-    git clone [repo-url]
+    git clone https://github.com/falvamo/ssmd.git
     ```
 
-4. Move into the repository:
+4. Move into the repository and build the executable with Make:
     ```bash
-    cd ssmd
-    ```
-
-5. Build the executable with Make:
-    ```bash
-    make
+    cd ssmd && make
     ```
 
 # 4. Known Issues
